@@ -10,90 +10,90 @@ import type { BulkRenewal, BulkRenewalInterface } from '../BulkRenewal'
 
 const _abi = [
   {
-    inputs: [
+    "inputs": [
       {
-        internalType: 'contract ENS',
-        name: '_ens',
-        type: 'address',
-      },
+        "internalType": "contract TomoNs",
+        "name": "_tomoNs",
+        "type": "address"
+      }
     ],
-    stateMutability: 'nonpayable',
-    type: 'constructor',
+    "stateMutability": "nonpayable",
+    "type": "constructor"
   },
   {
-    inputs: [],
-    name: 'ens',
-    outputs: [
+    "inputs": [
       {
-        internalType: 'contract ENS',
-        name: '',
-        type: 'address',
+        "internalType": "string[]",
+        "name": "names",
+        "type": "string[]"
       },
+      {
+        "internalType": "uint256",
+        "name": "duration",
+        "type": "uint256"
+      }
     ],
-    stateMutability: 'view',
-    type: 'function',
+    "name": "renewAll",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
   },
   {
-    inputs: [
+    "inputs": [
       {
-        internalType: 'string[]',
-        name: 'names',
-        type: 'string[]',
+        "internalType": "string[]",
+        "name": "names",
+        "type": "string[]"
       },
       {
-        internalType: 'uint256',
-        name: 'duration',
-        type: 'uint256',
-      },
+        "internalType": "uint256",
+        "name": "duration",
+        "type": "uint256"
+      }
     ],
-    name: 'renewAll',
-    outputs: [],
-    stateMutability: 'payable',
-    type: 'function',
+    "name": "rentPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "total",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
   },
   {
-    inputs: [
+    "inputs": [
       {
-        internalType: 'string[]',
-        name: 'names',
-        type: 'string[]',
-      },
-      {
-        internalType: 'uint256',
-        name: 'duration',
-        type: 'uint256',
-      },
+        "internalType": "bytes4",
+        "name": "interfaceID",
+        "type": "bytes4"
+      }
     ],
-    name: 'rentPrice',
-    outputs: [
+    "name": "supportsInterface",
+    "outputs": [
       {
-        internalType: 'uint256',
-        name: 'total',
-        type: 'uint256',
-      },
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
     ],
-    stateMutability: 'view',
-    type: 'function',
+    "stateMutability": "pure",
+    "type": "function"
   },
   {
-    inputs: [
+    "inputs": [],
+    "name": "tomoNs",
+    "outputs": [
       {
-        internalType: 'bytes4',
-        name: 'interfaceID',
-        type: 'bytes4',
-      },
+        "internalType": "contract TomoNs",
+        "name": "",
+        "type": "address"
+      }
     ],
-    name: 'supportsInterface',
-    outputs: [
-      {
-        internalType: 'bool',
-        name: '',
-        type: 'bool',
-      },
-    ],
-    stateMutability: 'pure',
-    type: 'function',
-  },
+    "stateMutability": "view",
+    "type": "function"
+  }
 ]
 
 export class BulkRenewal__factory {

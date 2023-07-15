@@ -16,8 +16,8 @@ export default async function (
   { resolverAddress, value, ...params }: Params,
 ) {
   const labels = name.split('.')
-  if (labels.length !== 2 || labels[1] !== 'eth')
-    throw new Error('Currently only .eth TLD registrations are supported')
+  if (labels.length !== 2 || labels[1] !== 'tomo')
+    throw new Error('Currently only .tomo TLD registrations are supported')
 
   wrappedLabelLengthCheck(labels[0])
 

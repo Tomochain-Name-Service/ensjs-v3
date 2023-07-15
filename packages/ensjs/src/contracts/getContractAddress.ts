@@ -6,41 +6,41 @@ const addresses: Record<
 > = {
   /* eslint-disable @typescript-eslint/naming-convention */
   BaseRegistrarImplementation: {
-    '1': '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
-    '5': '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
+    '88': '0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85',
+    '89': '0xce0537BD0F700d014Dca329eF75e344B35bff7e0',
   },
   DNSRegistrar: {
-    '1': '0x58774Bb8acD458A640aF0B88238369A167546ef2',
-    '5': '0x8edc487D26F6c8Fa76e032066A3D4F87E273515d',
+    '88': '0x58774Bb8acD458A640aF0B88238369A167546ef2',
+    '89': '0x4618A534435f81936CabD630B8DA30A575F71e96',
   },
   ETHRegistrarController: {
-    '1': '0x253553366Da8546fC250F225fe3d25d0C782303b',
-    '5': '0xCc5e7dB10E65EED1BBD105359e7268aa660f6734',
+    '88': '0x253553366Da8546fC250F225fe3d25d0C782303b',
+    '89': '0xB56455Cdc9D962dd49284baabF1545F0E10FD3D6',
   },
   Multicall: '0xcA11bde05977b3631167028862bE2a173976CA11',
   NameWrapper: {
-    '1': '0xD4416b13d2b3a9aBae7AcD5D6C2BbDBE25686401',
-    '5': '0x114D4603199df73e7D157787f8778E21fCd13066',
+    '88': '0xD4416b13d2b3a9aBae7AcD5D6C2BbDBE25686401',
+    '89': '0xc51131DF692Ea113aCe23a6F84F9DADfE725dB82',
   },
   PublicResolver: {
-    '1': '0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63',
-    '5': '0xd7a4F6473f32aC2Af804B3686AE8F1932bC35750',
+    '88': '0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63',
+    '89': '0x96a386bef3Ab62F8b166a3F2cdd352fD2a33FB51',
   },
   ENSRegistry: {
-    '1': '0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e',
-    '5': '0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e',
+    '88': '0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e',
+    '89': '0xB377E85fe2233734b47C90e7403FAEFb40Ba9aE6',
   },
   ReverseRegistrar: {
-    '1': '0xa58E81fe9b61B5c3fE2AFD33CF304c454AbFc7Cb',
-    '5': '0x4f7A657451358a22dc397d5eE7981FfC526cd856',
+    '88': '0xa58E81fe9b61B5c3fE2AFD33CF304c454AbFc7Cb',
+    '89': '0x2E52598E3d04Eb558983100eFFdDe889b660f7a3',
   },
   UniversalResolver: {
-    '1': '0xc0497e381f536be9ce14b0dd3817cbcae57d2f62',
-    '5': '0x56522d00c410a43bffdf00a9a569489297385790',
+    '88': '0xc0497e381f536be9ce14b0dd3817cbcae57d2f62',
+    '89': '0xBF3D8E093eC723684f5eF9C2eBB40424E1E1eE68',
   },
   BulkRenewal: {
-    '1': '0xa12159e5131b1eEf6B4857EEE3e1954744b5033A',
-    '5': '0xeA64C81d0d718620daBC02D61f3B255C641f475F',
+    '88': '0xa12159e5131b1eEf6B4857EEE3e1954744b5033A',
+    '89': '0x3Fa6302f3F4416d1B57572529a5928C682b74CA5',
   },
   /* eslint-enable @typescript-eslint/naming-convention */
 }

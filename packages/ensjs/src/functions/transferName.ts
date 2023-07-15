@@ -27,7 +27,7 @@ export default async function (
         signer,
       )
       const labels = name.split('.')
-      if (labels.length > 2 || labels[labels.length - 1] !== 'eth') {
+      if (labels.length > 2 || labels[labels.length - 1] !== 'tomo') {
         throw new Error('Invalid name for baseRegistrar')
       }
       const tokenId = solidityKeccak256(['string'], [labels[0]])

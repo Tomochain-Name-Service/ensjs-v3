@@ -116,11 +116,11 @@ export default async function (
   }
   if (fuseOptions)
     throw new Error(
-      'Fuses can not be initially set when wrapping a non .eth name',
+      'Fuses can not be initially set when wrapping a non .tomo name',
     )
   if (expiry)
     throw new Error(
-      'Expiry can not be initially set when wrapping a non .eth name',
+      'Expiry can not be initially set when wrapping a non .tomo name',
     )
   return wrapOther(
     { contracts },

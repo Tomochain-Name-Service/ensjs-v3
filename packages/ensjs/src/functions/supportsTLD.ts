@@ -15,7 +15,7 @@ export default async function (
     const labels = name.split('.')
     const tld = labels[labels.length - 1]
 
-    if (tld === 'eth') return true
+    if (tld === 'tomo') return true
 
     const tldOwner = await getOwner(tld, { contract: 'registry' })
     if (!tldOwner?.owner) return false

@@ -138,7 +138,7 @@ const decode = async (
   const { contract, skipGraph = true } = options
 
   const labels = name.split('.')
-  const isEth = labels[labels.length - 1] === 'eth'
+  const isEth = labels[labels.length - 1] === 'tomo'
   const is2LD = labels.length === 2
 
   if (contract || labels.length === 1) {
@@ -174,7 +174,7 @@ const decode = async (
     expired?: boolean
   } = {}
 
-  // check for only .eth names
+  // check for only .tomo names
   if (isEth) {
     let graphErrors: GraphQLError[] | undefined
 
@@ -260,7 +260,7 @@ const decode = async (
       return owner
     }
     if (hexStripZeros(registryOwner) !== '0x') {
-      // if there is no registrar owner, but the label length is two, then the domain is an expired 2LD .eth
+      // if there is no registrar owner, but the label length is two, then the domain is an expired 2LD .tomo
       // so we still want to return the ownership values
       if (labels.length === 2) {
         const owner: Owner = {
@@ -294,7 +294,7 @@ const decode = async (
         ownershipLevel: 'registry',
       }
     }
-    // .eth names with no registrar owner are either unregistered or expired
+    // .tomo names with no registrar owner are either unregistered or expired
     if (graphErrors) {
       throw new ENSJSError({
         errors: graphErrors,
@@ -303,8 +303,8 @@ const decode = async (
     return undefined
   }
 
-  // non .eth names inherit the owner from the registry
-  // there will only ever be an owner for non .eth names, not a registrant
+  // non .tomo names inherit the owner from the registry
+  // there will only ever be an owner for non .tomo names, not a registrant
   // this is because for unwrapped names, there is no associated NFT
   // and for wrapped names, owner and registrant are the same thing
   if (
@@ -318,7 +318,7 @@ const decode = async (
     }
   }
 
-  // for unwrapped non .eth names, the owner is the registry owner
+  // for unwrapped non .tomo names, the owner is the registry owner
   if (hexStripZeros(registryOwner) !== '0x') {
     return {
       owner: registryOwner,
