@@ -1,6 +1,6 @@
 {
   "name": "@tomochain-name-service/tomonsjs",
-  "version": "0.0.2",
+  "version": "0.0.11",
   "description": "ENS javascript library for contract interaction",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.mjs",
@@ -81,6 +81,7 @@
     "@ensdomains/address-encoder": "^0.2.18",
     "@ensdomains/content-hash": "^2.5.7",
     "@ensdomains/dnssecoraclejs": "^0.2.8",
+    "@tomochain-name-service/tns-contracts": "^0.0.6",
     "cbor": "^8.1.0",
     "dns-packet": "^5.3.1",
     "graphql": "^16.3.0",
