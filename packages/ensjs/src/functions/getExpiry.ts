@@ -14,7 +14,7 @@ const getRegistrarExpiry = async (
   { contracts, multicallWrapper }: ENSArgs<'contracts' | 'multicallWrapper'>,
   labels: string[],
 ) => {
-  if (labels.length > 2 || labels[1] !== 'tomo') {
+  if (labels.length > 2 || labels[1] !== 'vic') {
     throw new Error('Only .tomo names have expiry dates on the registrar')
   }
 

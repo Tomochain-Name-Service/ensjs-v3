@@ -64,6 +64,7 @@ export const multicallWrapper = {
     transactions: TransactionRequest[],
     requireSuccess: boolean = false,
   ) {
+    console.log('multicallWrapper', { contracts })
     const multicall = await contracts?.getMulticall()!
     return {
       to: multicall.address,
@@ -82,6 +83,7 @@ export const multicallWrapper = {
     transactions: TransactionRequest[],
   ) {
     if (!data) return
+    console.log('contracts', { contracts })
     const multicall = await contracts?.getMulticall()!
     try {
       const [result] = multicall.interface.decodeFunctionResult(

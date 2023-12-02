@@ -70,7 +70,10 @@ export const makeCommitmentData = ({
     }
   }
 
+  console.log('tomonsjs', { records })
+
   const data = records ? generateRecordCallArray(hash, records, resolver) : []
+  console.log('tomonsjs', { data })
 
   return [
     labelHash,

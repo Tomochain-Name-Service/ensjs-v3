@@ -5,10 +5,8 @@ const raw = async ({ contracts }: ENSArgs<'contracts'>, name: string) => {
   const baseRegistrar = await contracts?.getBaseRegistrar()!
 
   const labels = name.split('.')
-  if (labels.length !== 2 || labels[1] !== 'tomo') {
-    throw new Error(
-      'Currently only .tomo names can be checked for availability',
-    )
+  if (labels.length !== 2 || labels[1] !== 'vic') {
+    throw new Error('Currently only .vic names can be checked for availability')
   }
 
   return {

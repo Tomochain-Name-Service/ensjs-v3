@@ -24,6 +24,7 @@ const decode = async (
   passthrough: TransactionRequest & { passthrough?: any }[],
   ...items: BatchFunctionResult<RawFunction>[]
 ): Promise<any[] | undefined> => {
+  console.log('decode', { multicallWrapper, data, passthrough, items })
   const response = await multicallWrapper.decode(data, passthrough)
   if (!response) return
 

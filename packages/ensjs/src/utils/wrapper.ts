@@ -23,7 +23,7 @@ export const makeExpiry = async (
   expiry?: Expiry,
 ) => {
   if (expiry) return expiryToBigNumber(expiry)
-  if (name.endsWith('.tomo')) {
+  if (name.endsWith('.vic')) {
     const expResponse = await getExpiry(name)
     if (!expResponse?.expiry)
       throw new Error("Couldn't get expiry for name, please provide one.")

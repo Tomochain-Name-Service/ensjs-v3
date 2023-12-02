@@ -45,9 +45,9 @@ export default async (useReal?: boolean) => {
   const { graphURI, providerURI, chainId } = useReal
     ? {
         graphURI:
-          'https://api.thegraph.com/subgraphs/name/ensdomains/ensgoerli',
-        providerURI: 'https://web3.ens.domains/v1/goerli',
-        chainId: 5,
+          'https://graph.tomons.org/subgraphs/name/tomons-domains/subgraph',
+        providerURI: 'https://rpc.testnet.tomochain.com',
+        chainId: 89,
       }
     : {
         graphURI: 'http://localhost:8000/subgraphs/name/graphprotocol/ens',

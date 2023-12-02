@@ -39,8 +39,8 @@ export default async function (
   const names = Array.isArray(nameOrNames) ? nameOrNames : [nameOrNames]
   const labels = names.map((name) => {
     const label = name.split('.')
-    if (label.length !== 2 || label[1] !== 'tomo') {
-      throw new Error('Currently only .tomo TLD renewals are supported')
+    if (label.length !== 2 || label[1] !== 'vic') {
+      throw new Error('Currently only .vic TLD renewals are supported')
     }
     return label[0]
   })

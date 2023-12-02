@@ -138,7 +138,7 @@ const decode = async (
   const { contract, skipGraph = true } = options
 
   const labels = name.split('.')
-  const isEth = labels[labels.length - 1] === 'tomo'
+  const isEth = labels[labels.length - 1] === 'vic'
   const is2LD = labels.length === 2
 
   if (contract || labels.length === 1) {

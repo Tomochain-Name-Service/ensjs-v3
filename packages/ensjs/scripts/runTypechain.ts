@@ -16,9 +16,12 @@ const overrides = [
 async function main() {
   const cwd = process.cwd()
 
-  const contracts = path.resolve(cwd, './node_modules/@ensdomains/ens-contracts')
+  const contracts = path.resolve(
+    cwd,
+    './node_modules/@tomochain-name-service/tns-contracts',
+  )
   if (!fs.existsSync(contracts)) {
-    throw new Error('@ensdomains/ens-contracts not found')
+    throw new Error('@tomochain-name-service/tns-contracts not found')
   }
 
   if (!fs.existsSync('./cache/json-abis'))

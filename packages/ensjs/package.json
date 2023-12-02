@@ -1,6 +1,6 @@
 {
   "name": "@tomochain-name-service/tomonsjs",
-  "version": "0.0.11",
+  "version": "0.0.16",
   "description": "ENS javascript library for contract interaction",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.mjs",
